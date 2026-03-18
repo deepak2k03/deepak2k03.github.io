@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
@@ -15,6 +19,10 @@
     background: var(--bg);
     color: var(--text);
     font-family: 'Poppins', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   .container {
@@ -59,6 +67,37 @@
   .content {
     margin-top: 3.2rem;
     flex: 1;
+  }
+
+  .home {
+    margin-top: 2.1rem;
+  }
+
+  .home h1 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.25;
+    color: var(--text);
+  }
+
+  .home p {
+    margin-top: 0.9rem;
+    max-width: 680px;
+    color: var(--muted);
+    font-size: 1rem;
+  }
+
+  .section-title {
+    margin: 0 0 0.8rem;
+    color: var(--text);
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+
+  .projects-note {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.98rem;
   }
 
   .blog-row {
@@ -111,15 +150,19 @@
     .blog-title {
       font-size: 1.55rem;
     }
+
+    .home h1 {
+      font-size: 1.55rem;
+    }
   }
 </style>
 
 <div class="container">
   <nav class="topbar" aria-label="Main navigation">
     <ul class="links">
-      <li><a href="#">Home</a></li>
-      <li><a class="active" href="#">Blogs</a></li>
-      <li><a href="#">Projects</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a class="active" href="#blogs">Blogs</a></li>
+      <li><a href="#projects">Projects</a></li>
     </ul>
 
     <ul class="social">
@@ -129,10 +172,26 @@
   </nav>
 
   <main class="content">
-    <a class="blog-row" href="blogs/blog1.md">
-      <span class="blog-title"><span class="arrow">&raquo;</span> GSoC Final Report</span>
-      <span class="date">Aug 23, 2024</span>
-    </a>
+    <section id="home" class="home">
+      <h1>Hello, I am Deepak</h1>
+      <p>
+        This is my personal GSoC journey blog. I am a backend-focused developer exploring open source,
+        systems thinking, and practical engineering through real contributions.
+      </p>
+    </section>
+
+    <section id="blogs" style="margin-top: 2.1rem;">
+      <h2 class="section-title">Blogs</h2>
+      <a class="blog-row" href="blogs/blog1.md">
+        <span class="blog-title"><span class="arrow">&raquo;</span> GSoC Final Report</span>
+        <span class="date">Aug 23, 2024</span>
+      </a>
+    </section>
+
+    <section id="projects" style="margin-top: 2.2rem;">
+      <h2 class="section-title">Projects</h2>
+      <p class="projects-note">Project highlights coming soon.</p>
+    </section>
   </main>
 
   <footer class="footer">Made with <span class="heart">&hearts;</span></footer>
