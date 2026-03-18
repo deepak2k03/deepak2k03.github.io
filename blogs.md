@@ -21,10 +21,6 @@ layout: null
     font-family: 'Poppins', sans-serif;
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
-
   .container {
     max-width: 920px;
     min-height: 100vh;
@@ -69,35 +65,11 @@ layout: null
     flex: 1;
   }
 
-  .home {
-    margin-top: 2.1rem;
-  }
-
-  .home h1 {
-    margin: 0;
-    font-size: 2rem;
-    line-height: 1.25;
-    color: var(--text);
-  }
-
-  .home p {
-    margin-top: 0.9rem;
-    max-width: 680px;
-    color: var(--muted);
-    font-size: 1rem;
-  }
-
   .section-title {
     margin: 0 0 0.8rem;
     color: var(--text);
     font-size: 1.15rem;
     font-weight: 600;
-  }
-
-  .projects-note {
-    margin: 0;
-    color: var(--muted);
-    font-size: 0.98rem;
   }
 
   .blog-row {
@@ -150,18 +122,14 @@ layout: null
     .blog-title {
       font-size: 1.55rem;
     }
-
-    .home h1 {
-      font-size: 1.55rem;
-    }
   }
 </style>
 
 <div class="container">
   <nav class="topbar" aria-label="Main navigation">
     <ul class="links">
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="blogs.html">Blogs</a></li>
       <li><a href="projects.html">Projects</a></li>
     </ul>
 
@@ -172,13 +140,11 @@ layout: null
   </nav>
 
   <main class="content">
-    <section class="home">
-      <h1>Hello, I am Deepak</h1>
-      <p>
-        This is my personal GSoC journey blog. I am a backend-focused developer exploring open source,
-        systems thinking, and practical engineering through real contributions.
-      </p>
-    </section>
+    <h2 class="section-title">Blogs</h2>
+    <a class="blog-row" href="blogs/blog1.html">
+      <span class="blog-title"><span class="arrow">&raquo;</span> GSoC Final Report</span>
+      <span class="date">Aug 23, 2024</span>
+    </a>
   </main>
 
   <footer class="footer">Made with <span class="heart">&hearts;</span></footer>

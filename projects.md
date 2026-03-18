@@ -21,10 +21,6 @@ layout: null
     font-family: 'Poppins', sans-serif;
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
-
   .container {
     max-width: 920px;
     min-height: 100vh;
@@ -69,65 +65,17 @@ layout: null
     flex: 1;
   }
 
-  .home {
-    margin-top: 2.1rem;
-  }
-
-  .home h1 {
+  .title {
     margin: 0;
     font-size: 2rem;
     line-height: 1.25;
-    color: var(--text);
   }
 
-  .home p {
+  .subtitle {
     margin-top: 0.9rem;
     max-width: 680px;
     color: var(--muted);
     font-size: 1rem;
-  }
-
-  .section-title {
-    margin: 0 0 0.8rem;
-    color: var(--text);
-    font-size: 1.15rem;
-    font-weight: 600;
-  }
-
-  .projects-note {
-    margin: 0;
-    color: var(--muted);
-    font-size: 0.98rem;
-  }
-
-  .blog-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 1rem;
-    color: var(--text);
-    text-decoration: none;
-    padding: 0.5rem 0;
-  }
-
-  .blog-title {
-    display: flex;
-    gap: 0.8rem;
-    align-items: center;
-    font-size: 2.2rem;
-    line-height: 1.25;
-  }
-
-  .arrow {
-    color: var(--muted);
-    font-size: 1.35rem;
-  }
-
-  .date {
-    color: var(--muted);
-    font-style: italic;
-    font-size: 0.95rem;
-    white-space: nowrap;
   }
 
   .footer {
@@ -142,16 +90,7 @@ layout: null
   }
 
   @media (max-width: 720px) {
-    .blog-row {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .blog-title {
-      font-size: 1.55rem;
-    }
-
-    .home h1 {
+    .title {
       font-size: 1.55rem;
     }
   }
@@ -160,9 +99,9 @@ layout: null
 <div class="container">
   <nav class="topbar" aria-label="Main navigation">
     <ul class="links">
-      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="blogs.html">Blogs</a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li><a class="active" href="projects.html">Projects</a></li>
     </ul>
 
     <ul class="social">
@@ -172,13 +111,8 @@ layout: null
   </nav>
 
   <main class="content">
-    <section class="home">
-      <h1>Hello, I am Deepak</h1>
-      <p>
-        This is my personal GSoC journey blog. I am a backend-focused developer exploring open source,
-        systems thinking, and practical engineering through real contributions.
-      </p>
-    </section>
+    <h1 class="title">Projects</h1>
+    <p class="subtitle">I will list my major projects and open source work here soon.</p>
   </main>
 
   <footer class="footer">Made with <span class="heart">&hearts;</span></footer>
