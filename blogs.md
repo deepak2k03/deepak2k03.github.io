@@ -142,8 +142,12 @@ layout: null
   <main class="content">
     <h2 class="section-title">Blogs</h2>
     <a class="blog-row" href="blogs/blog1.html">
-      <span class="blog-title"><span class="arrow">&raquo;</span> Getting Started with LLM4S </span>
-      <span class="date">Jan 4, 2026</span>
+      <span class="blog-title"><span class="arrow">&raquo;</span> LLM4S Contribution Journal: Week One</span>
+      <span class="date">Mar 18, 2026</span>
+    </a>
+    <a class="blog-row" href="blogs/blog2.html">
+      <span class="blog-title"><span class="arrow">&raquo;</span> My GSoC Contributions Summary</span>
+      <span class="date">Mar 18, 2026</span>
     </a>
   </main>
 
